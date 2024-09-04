@@ -38,4 +38,15 @@ def list3D():
         print(f'Sum of {i}th row = {sum}')
     
 
+while(1):
+    print("--------START--------")
+    print()
+    print("[1]. Row sum for 2D List\n[2]. Row sum for 3D List")
+    choice : int = int(input("Enter a choice : "))
+    print()
+    match choice:
+        case 1 : matrix_row_sum()
+        case 2 : list3D()
+        case _ : print("Enter a valid choice !!")
 
+    print("--------END--------")
